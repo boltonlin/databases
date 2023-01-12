@@ -20,20 +20,7 @@ USE chat;
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `id` INTEGER NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(50) NOT NULL,
-  PRIMARY KEY (`id`)
-);
-
--- ---
--- Table 'rooms'
---
--- ---
-
-DROP TABLE IF EXISTS `rooms`;
-
-CREATE TABLE `rooms` (
-  `id` INTEGER NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(50) NOT NULL,
+  `name` VARCHAR(50) NOT NULL UNIQUE,
   PRIMARY KEY (`id`)
 );
 
@@ -48,7 +35,7 @@ CREATE TABLE `messages` (
   `id` INTEGER NOT NULL AUTO_INCREMENT,
   `user_id` INTEGER NOT NULL,
   `text` MEDIUMTEXT NOT NULL,
-  `room_id` INTEGER NOT NULL,
+  `roomname` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`id`)
 );
 
@@ -57,7 +44,6 @@ CREATE TABLE `messages` (
 -- ---
 
 ALTER TABLE `messages` ADD FOREIGN KEY (user_id) REFERENCES `users` (`id`);
-ALTER TABLE `messages` ADD FOREIGN KEY (room_id) REFERENCES `rooms` (`id`);
 
 /*  Execute this file from the command line by typing:
  *    mysql -u root < server/schema.sql
