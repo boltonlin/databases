@@ -34,3 +34,6 @@ bower_components/
 .floobit
 .floo
 .flooignore
+
+# config
+client/env/config.js

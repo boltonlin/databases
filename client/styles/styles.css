@@ -1,0 +1,206 @@
+body {
+    background: #eee;
+    text-align: center;
+    padding: 0 25px;
+    font-family: arial, sans-serif;
+}
+
+#main, #chats {
+    width: 700px;
+    margin: auto;
+    text-align: left;
+    background: white;
+    padding: 50px 60px;
+    border: solid #ddd;
+    border-width: 0px 1px 1px 1px;
+}
+
+#main h1 {
+    margin-top: 0;
+    font-size: 35px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+#main h1 span {
+    font-style:italic;
+}
+
+#main ul {
+    padding-left: 20px;
+}
+
+#main .error {
+    border: 1px solid red;
+    background: #FDEFF0;
+    padding: 20px;
+}
+
+#main .success {
+    margin-top: 25px;
+}
+
+#main .success code {
+    font-size: 12px;
+    color: green;
+    line-height: 13px;
+}
+
+button {
+    border: solid rgb(107, 107, 107);
+    border-width: 1px;
+}
+
+form {
+    padding: 20px;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+form input[type=text] {
+    margin-right: 10px;
+    width: 85%;
+    font-size: 12px;
+    padding: 5px;
+}
+
+#send .client-username {
+    font-weight: 700;
+}
+
+.chat {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #eee;
+    border-radius: 15px;
+}
+
+.chat .username {
+    font-weight: 700;
+}
+
+.chat .username:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.chat .roominfo {
+    font-style: italic;
+    font-size: 0.75em;
+    text-align: right;
+}
+
+.chat:hover {
+    background-color: #ddd;
+}
+
+.unread {
+    background-color: #db9191;
+}
+
+.mention {
+    background-color: #89dcbb;
+}
+
+.spinner {
+    float: right;
+    height: 5px;
+    margin-bottom: 5px;
+}
+
+.spinner img {
+    padding-right: 15px;
+}
+
+.friend {
+    color: #fff;
+    background-color: #0090da;
+}
+
+.friend:hover {
+    background-color: #65b2d9
+}
+
+.highlight {
+    border: 3px dotted red;
+}
+
+/* Style the tab */
+#tablist {
+    margin: auto;
+    width: 700px;
+    overflow: hidden;
+    padding: 0px 60px;
+    border: solid #ddd;
+    border-width: 0px 1px 1px 1px;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+#tablist button {
+    background-color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border: none;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+#tablist button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+#tablist button.active {
+    background-color: #ccc;
+}
+
+.tab i:hover {
+    color: red;
+}
+
+.tab__badge {
+    background-color: #fa3e3e;
+    border-radius: 2px;
+    color: white;
+
+    padding: 1px 3px;
+    font-size: 10px;
+
+    position: absolute; /* Position the badge within the relatively positioned button */
+    top: 2px;
+    left: 2px;
+}
+
+.nav {
+    width: 700px;
+    margin: auto;
+    border: solid #ddd;
+    border-width: 0px 1px 1px 1px;
+}
+
+a.nav-link {
+    cursor: pointer;
+}
+
+a.nav-link.active {
+    font-weight: 600;
+}
+
+i.fa-heart {
+    float: right;
+}
+
+i.fa-heart-crack {
+    float: right;
+}
+
+i.fa-heart:hover {
+    color: #EB6383
+}
+
+i.fa-solid {
+    color: #EB6383
+}
